@@ -16,6 +16,8 @@ return require('packer').startup(function(use)
   -- My plugins here
   use 'scrooloose/nerdtree'
   use 'editorconfig/editorconfig-vim'
+  use 'junegunn/fzf'
+  use 'neovim/nvim-lspconfig'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
