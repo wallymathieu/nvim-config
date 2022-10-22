@@ -24,11 +24,9 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
 
-" Nerd tree:
 map <F3> :NERDTreeToggle<CR>
 map <F4> :FZF<CR>
 " #nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
 " #nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-" #nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 " #nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>

@@ -37,10 +37,11 @@ local configure_nvim = function()
     on_attach = on_attach,
     flags = lsp_flags,
   }
-  -- require('lspconfig')['fsharp-language-server'].setup{
-  --  on_attach = on_attach,
-  --  flags = lsp_flags,
-  --}
+  require('lspconfig')['fsautocomplete'].setup{
+     on_attach = on_attach,
+     flags = lsp_flags,
+  }
+
 end
 local ensure_packer = function()
   local fn = vim.fn
@@ -62,6 +63,8 @@ return require('packer').startup(function(use)
   use 'editorconfig/editorconfig-vim'
   use 'junegunn/fzf'
   use 'neovim/nvim-lspconfig'
+  -- F# Syntax support
+  use 'adelarsq/neofsharp.vim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
