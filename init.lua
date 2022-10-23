@@ -41,7 +41,10 @@ local configure_nvim = function()
      on_attach = on_attach,
      flags = lsp_flags,
   }
-
+  require('lspconfig')['csharp_ls'].setup{
+     on_attach = on_attach,
+     flags = lsp_flags,
+  }
 end
 local ensure_packer = function()
   local fn = vim.fn
