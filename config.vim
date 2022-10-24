@@ -23,6 +23,7 @@ autocmd FocusLost * :set number
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
+colorscheme vibrantink
 
 map <F3> :NERDTreeToggle<CR>
 map <F4> :FZF<CR>
