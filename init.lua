@@ -45,6 +45,7 @@ local configure_nvim = function()
      on_attach = on_attach,
      flags = lsp_flags,
   }
+  vim.g.material_style = "deep ocean"
 end
 local ensure_packer = function()
   local fn = vim.fn
@@ -68,7 +69,7 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   -- F# Syntax support
   use 'adelarsq/neofsharp.vim'
-
+  use 'marko-cerovac/material.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

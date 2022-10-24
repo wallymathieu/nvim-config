@@ -23,11 +23,8 @@ autocmd FocusLost * :set number
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
-colorscheme vibrantink
+" colorscheme vibrantink
 
 map <F3> :NERDTreeToggle<CR>
 map <F4> :FZF<CR>
-" #nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
-" #nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-" #nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
