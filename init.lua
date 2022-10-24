@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
   -- F# Syntax support
   use 'adelarsq/neofsharp.vim'
   use 'marko-cerovac/material.nvim'
+  use 'mileszs/ack.vim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

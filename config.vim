@@ -28,3 +28,7 @@ autocmd CursorMoved * :set relativenumber
 map <F3> :NERDTreeToggle<CR>
 map <F4> :FZF<CR>
 " nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
