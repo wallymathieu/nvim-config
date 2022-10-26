@@ -26,7 +26,8 @@ autocmd CursorMoved * :set relativenumber
 " colorscheme vibrantink
 
 map <F3> :NERDTreeToggle<CR>
-map <F4> :FZF<CR>
+nnoremap <F4> :set hlsearch!<CR>
+map <S-F4> :FZF<CR>
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
