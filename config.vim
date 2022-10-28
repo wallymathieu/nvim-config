@@ -27,7 +27,6 @@ autocmd CursorMoved * :set relativenumber
 
 map <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :set hlsearch!<CR>
-map <S-F4> :FZF<CR>
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
