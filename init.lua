@@ -46,6 +46,10 @@ local configure_nvim = function()
      on_attach = on_attach,
      flags = lsp_flags,
   }
+  require('lspconfig')['clojure_lsp'].setup{
+     on_attach = on_attach,
+     flags = lsp_flags,
+  }
   vim.g.material_style = "deep ocean"
 end
 local ensure_packer = function()
