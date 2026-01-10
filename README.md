@@ -8,3 +8,4 @@ See:
 
 - [csharp-language-server](https://github.com/razzmatazz/csharp-language-server)
 - [FsAutoComplete](https://github.com/ionide/FsAutoComplete)
+- [LSP config](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
