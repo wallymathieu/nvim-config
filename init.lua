@@ -34,22 +34,17 @@ local lsp_flags = {
 local configure_nvim = function()
   local config_vim = vim.fn.stdpath('config')..'/config.vim'
   vim.cmd('source '.. config_vim)
-  require('lspconfig')['tsserver'].setup{
+  
+  vim.lsp.config('ts_ls', { 
     on_attach = on_attach,
     flags = lsp_flags,
-  }
-  require('lspconfig')['fsautocomplete'].setup{
-     on_attach = on_attach,
-     flags = lsp_flags,
-  }
-  require('lspconfig')['csharp_ls'].setup{
-     on_attach = on_attach,
-     flags = lsp_flags,
-  }
-  require('lspconfig')['clojure_lsp'].setup{
-     on_attach = on_attach,
-     flags = lsp_flags,
-  }
+  })
+  vim.lsp.config('lua_ls', {})
+  vim.lsp.enable('clojure_lsp')
+  vim.lsp.enable('csharp_ls')
+  vim.lsp.enable('fsautocomplete')
+
+  
   vim.g.material_style = "deep ocean"
 end
 local ensure_packer = function()
